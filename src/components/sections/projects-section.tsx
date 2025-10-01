@@ -13,11 +13,6 @@ const Asterisk = (props: React.SVGProps<SVGSVGElement>) => (
 
 export async function ProjectsSection() {
   const projects = await getGithubProjects('xthxr');
-  const projectImages = [
-    PlaceHolderImages.find(img => img.id === 'project-1'),
-    PlaceHolderImages.find(img => img.id === 'project-2'),
-    PlaceHolderImages.find(img => img.id === 'project-3'),
-  ]
 
   return (
     <section id="projects" className="w-full py-12 lg:py-20 bg-background text-foreground">
@@ -34,25 +29,18 @@ export async function ProjectsSection() {
               <div className="w-full h-px bg-border"></div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {projects.map((project, index) => {
-              const image = projectImages[index % projectImages.length] || PlaceHolderImages[0];
-              return (
+            {projects.map((project) => (
               <div key={project.id} className="flex flex-col group">
-                <div className="relative overflow-hidden">
-                    <div className="absolute -bottom-2 -left-2 w-full h-full border-2 border-muted-foreground group-hover:border-primary transition-all duration-300" style={{clipPath: 'polygon(0 100%, 0 15%, 15% 0, 100% 0, 100% 85%, 85% 100%)'}}></div>
-                    {image && <Image
-                        src={image.imageUrl}
-                        alt={image.description}
-                        data-ai-hint={image.imageHint}
-                        width={500}
-                        height={300}
-                        className="object-cover aspect-[5/3] w-full z-10"
-                    />}
+                <div className="relative overflow-hidden aspect-[5/3] w-full bg-muted/20 border-2 border-border group-hover:border-primary transition-all duration-300" style={{clipPath: 'polygon(0 100%, 0 15%, 15% 0, 100% 0, 100% 85%, 85% 100%)'}}>
+                  <div className="absolute inset-0 bg-gradient-to-br from-background via-transparent to-background opacity-50 group-hover:opacity-20 transition-opacity duration-300"></div>
+                   <div className="absolute inset-0 flex items-center justify-center">
+                        <div className="w-24 h-24 rounded-full bg-primary/10 blur-2xl animate-pulse-slow"></div>
+                    </div>
                 </div>
                 <div className="flex-1 flex flex-col justify-between mt-6">
                     <div>
                         <h3 className="text-2xl font-bold font-headline">{project.name}</h3>
-                        <p className="text-muted-foreground mt-2">{project.description}</p>
+                        <p className="text-muted-foreground mt-2 line-clamp-2">{project.description}</p>
                     </div>
                     <Link href={project.html_url} target="_blank" rel="noopener noreferrer" className="mt-4">
                         <Button variant="link" className="p-0 text-lg text-primary hover:text-primary/80">
@@ -61,10 +49,36 @@ export async function ProjectsSection() {
                     </Link>
                 </div>
               </div>
-            )})}
+            ))}
           </div>
         </div>
       </div>
     </section>
   );
 }
+
+// Add this to your tailwind.config.ts in the animation section
+// 'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+//
+// and in the keyframes section
+// 'pulse-slow': {
+//   '50%': {
+//     opacity: '.5',
+//     transform: 'scale(1.2)',
+//   },
+// },
+//
+// It's already in globals.css, but line-clamp requires a plugin:
+// npm install -D @tailwindcss/line-clamp
+// and add it to tailwind.config.ts `plugins: [require('@tailwindcss/line-clamp')]`
+// Since I can't do that, I'll use a CSS class for it in globals.css
+// .line-clamp-2 {
+//   overflow: hidden;
+//   display: -webkit-box;
+//   -webkit-box-orient: vertical;
+//   -webkit-line-clamp: 2;
+// }
+//
+// I've also updated the description to use line-clamp-2
+// And removed the placeholder image logic
+// And added a simple div with an animation
