@@ -1,0 +1,29 @@
+const Asterisk = (props: React.SVGProps<SVGSVGElement>) => (
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
+        <path d="M12 2v20"/><path d="m4.22 4.22 15.56 15.56"/><path d="M2 12h20"/><path d="m4.22 19.78 15.56-15.56"/>
+    </svg>
+)
+
+export function ExperienceSection() {
+  return (
+    <section id="experience" className="w-full py-12 lg:py-20 bg-background text-foreground">
+      <div className="container mx-auto px-4 md:px-8">
+        <div className="flex flex-col space-y-8">
+          <div>
+            <p className="text-lg text-muted-foreground mb-4">My Professional Journey</p>
+            <h2 className="text-5xl md:text-6xl font-bold font-headline tracking-tighter">
+              Experience
+            </h2>
+          </div>
+          <div className="flex items-center gap-4">
+              <Asterisk className="text-primary w-6 h-6" />
+              <div className="w-full h-px bg-border"></div>
+          </div>
+          <div className="text-center text-muted-foreground py-8">
+            <p>Experience section coming soon. I am currently open to new opportunities!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}

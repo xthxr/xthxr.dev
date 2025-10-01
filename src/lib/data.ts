@@ -17,10 +17,11 @@ function getImage(id: string): ImagePlaceholder {
 
 export const navLinks = [
     { name: "About", href: "#about" },
+    { name: "Experience", href: "#experience" },
+    { name: "Education", href: "#education" },
     { name: "Projects", href: "#projects" },
     { name: "Achievements", href: "#achievements" },
     { name: "Skills", href: "#skills" },
-    { name: "Education", href: "#education" },
     { name: "Contact", href: "#contact" },
 ];
 
