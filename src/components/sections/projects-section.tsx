@@ -31,23 +31,23 @@ export async function ProjectsSection() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project) => (
               <div key={project.id} className="flex flex-col group">
-                <div className="relative overflow-hidden aspect-[5/3] w-full bg-muted/20 border-2 border-border group-hover:border-primary transition-all duration-300 p-6 flex flex-col justify-between" style={{clipPath: 'polygon(0 100%, 0 15%, 15% 0, 100% 0, 100% 85%, 85% 100%)'}}>
+                <div className="relative overflow-hidden aspect-[5/3] w-full bg-muted/20 border-2 border-border group-hover:border-primary transition-all duration-300 p-6 flex flex-col justify-center text-center" style={{clipPath: 'polygon(0 100%, 0 15%, 15% 0, 100% 0, 100% 85%, 85% 100%)'}}>
                   <div className="absolute inset-0 bg-gradient-to-br from-background via-transparent to-background opacity-50 group-hover:opacity-20 transition-opacity duration-300"></div>
                    <div className="absolute inset-0 flex items-center justify-center">
                         <div className="w-24 h-24 rounded-full bg-primary/10 blur-2xl animate-pulse-slow"></div>
                     </div>
                     <div className="relative z-10">
                       <h3 className="text-2xl font-bold font-headline">{project.name}</h3>
-                    </div>
-                    <div className="relative z-10 flex items-center gap-4 text-sm">
-                        <div className="flex items-center gap-1">
-                            <Star className="w-4 h-4" />
-                            <span>{project.stargazers_count}</span>
-                        </div>
-                        <div className="flex items-center gap-1">
-                            <GitFork className="w-4 h-4" />
-                            <span>{project.forks_count}</span>
-                        </div>
+                      <div className="relative z-10 flex items-center justify-center gap-4 text-sm mt-4">
+                          <div className="flex items-center gap-1">
+                              <Star className="w-4 h-4" />
+                              <span>{project.stargazers_count}</span>
+                          </div>
+                          <div className="flex items-center gap-1">
+                              <GitFork className="w-4 h-4" />
+                              <span>{project.forks_count}</span>
+                          </div>
+                      </div>
                     </div>
                 </div>
                 <div className="flex-1 flex flex-col justify-between mt-6">
