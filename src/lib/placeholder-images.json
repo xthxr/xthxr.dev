@@ -1,3 +1,28 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "about-me",
+      "description": "A portrait of Athar Akram",
+      "imageUrl": "https://images.unsplash.com/photo-1508674861872-a51e06c50c9b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwb3J0cmFpdCUyMGRldmVsb3BlcnxlbnwwfHx8fDE3NTkzMjAwOTl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "portrait developer"
+    },
+    {
+      "id": "project-1",
+      "description": "Placeholder for Project 1",
+      "imageUrl": "https://images.unsplash.com/photo-1675495277087-10598bf7bcd1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx0ZWNobm9sb2d5JTIwY29kZXxlbnwwfHx8fDE3NTkyMzI2ODd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "technology code"
+    },
+    {
+      "id": "project-2",
+      "description": "Placeholder for Project 2",
+      "imageUrl": "https://images.unsplash.com/photo-1579567761406-4684ee0c75b6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxhYnN0cmFjdCUyMHRlY2h8ZW58MHx8fHwxNzU5MzI1MDUwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "abstract tech"
+    },
+    {
+      "id": "project-3",
+      "description": "Placeholder for Project 3",
+      "imageUrl": "https://images.unsplash.com/photo-1574848296471-28f79a036f79?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxtb2Rlcm4lMjBhcmNoaXRlY3R1cmV8ZW58MHx8fHwxNzU5MjY0NTU5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "modern architecture"
+    }
+  ]
 }
