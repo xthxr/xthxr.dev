@@ -20,7 +20,7 @@ export const navLinks = [
     { name: "Projects", href: "#projects" },
     { name: "Skills", href: "#skills" },
     { name: "Education", href: "#education" },
-    { name: "Open Source", href: "#opensource" },
+    { name: "Achievements", href: "#opensource" },
     { name: "Contact", href: "#contact" },
 ];
 
