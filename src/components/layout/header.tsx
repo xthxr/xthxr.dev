@@ -49,7 +49,9 @@ export function Header() {
         </nav>
 
         <div className="hidden md:flex items-center gap-4 text-sm font-medium">
-          <span className="text-muted-foreground">TURN ON SOUND</span>
+          <Link href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="text-muted-foreground transition-colors hover:text-foreground">
+            RESUME
+          </Link>
           <div className="w-8 h-px bg-muted-foreground"></div>
           <span className="text-foreground">{time}</span>
         </div>
