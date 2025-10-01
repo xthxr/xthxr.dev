@@ -36,6 +36,8 @@ export type Project = {
   description: string | null;
   html_url: string;
   topics: string[];
+  stargazers_count: number;
+  forks_count: number;
 };
 
 export async function getGithubProjects(username: string): Promise<Project[]> {
@@ -52,6 +54,8 @@ export async function getGithubProjects(username: string): Promise<Project[]> {
       description: repo.description,
       html_url: repo.html_url,
       topics: repo.topics || [],
+      stargazers_count: repo.stargazers_count,
+      forks_count: repo.forks_count,
     }));
   } catch (error) {
     console.error('Error fetching projects:', error);
