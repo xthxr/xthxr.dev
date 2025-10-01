@@ -47,7 +47,7 @@ export function ContactForm() {
     try {
       const subject = encodeURIComponent(`Message from ${values.name} via Portfolio`);
       const body = encodeURIComponent(`${values.message}\n\nFrom: ${values.name}\nEmail: ${values.email}`);
-      const mailtoLink = `mailto:atharakram@gmail.com?subject=${subject}&body=${body}`;
+      const mailtoLink = `mailto:myselfatharakram@gmail.com?subject=${subject}&body=${body}`;
       
       // We can't detect if the email was sent, so we'll assume the user will handle it.
       // We will open the mail client and show a confirmation toast.
