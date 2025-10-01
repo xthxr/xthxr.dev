@@ -30,7 +30,7 @@ export function Header() {
   ];
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background">
+    <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/40 backdrop-blur-sm">
       <div className="container mx-auto flex h-20 max-w-screen-2xl items-center justify-between px-4 md:px-8">
         <Link href="/" className="flex items-center">
           <span className="font-bold text-lg font-headline">
@@ -43,7 +43,7 @@ export function Header() {
             <Link
               key={link.href}
               href={link.href}
-              className="text-muted-foreground transition-colors hover:text-foreground"
+              className="text-muted-foreground transition-colors hover:text-primary"
             >
               {link.name.toUpperCase()}
             </Link>
@@ -51,7 +51,7 @@ export function Header() {
         </nav>
 
         <div className="hidden md:flex items-center gap-4 text-sm font-medium">
-          <Link href="https://drive.google.com/file/d/1I6U0c5EMmQDiZzc7ZUwEcScrdZfaJ1uS/preview" target="_blank" rel="noopener noreferrer" className="text-muted-foreground transition-colors hover:text-foreground">
+          <Link href="https://drive.google.com/file/d/1I6U0c5EMmQDiZzc7ZUwEcScrdZfaJ1uS/preview" target="_blank" rel="noopener noreferrer" className="text-muted-foreground transition-colors hover:text-primary">
             RESUME
           </Link>
           <div className="w-8 h-px bg-muted-foreground"></div>
@@ -86,7 +86,7 @@ export function Header() {
                     key={link.href}
                     href={link.href}
                     onClick={() => setIsOpen(false)}
-                    className="text-xl text-muted-foreground transition-colors hover:text-foreground"
+                    className="text-xl text-muted-foreground transition-colors hover:text-primary"
                   >
                     {link.name}
                   </Link>
