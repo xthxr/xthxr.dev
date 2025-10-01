@@ -19,6 +19,7 @@ export const navLinks = [
     { name: "About", href: "#about" },
     { name: "Projects", href: "#projects" },
     { name: "Skills", href: "#skills" },
+    { name: "Education", href: "#education" },
     { name: "Contact", href: "#contact" },
 ];
 
@@ -47,6 +48,15 @@ export const projects = [
     link: '#',
     image: getImage('project-3'),
   },
+];
+
+export const education = [
+    {
+        institution: 'University of Technology',
+        degree: 'Bachelor of Science in Computer Engineering',
+        duration: '2021 - 2025',
+        description: 'Focusing on software development, data structures, and algorithms. Actively involved in the university coding club and hackathon team.'
+    }
 ];
 
 export const contributions = [
