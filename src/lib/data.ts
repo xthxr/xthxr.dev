@@ -128,6 +128,57 @@ export const achievements = [
     },
 ];
 
+export const experiences = [
+    {
+        role: "Contributor",
+        company: "GirlScript Summer of Code",
+        duration: "Aug 2025 - Present",
+        location: "Remote",
+        description: "Contributed to open-source projects, focusing on AI and Git-based workflows.",
+        skills: ["Open-Source Development", "Git", "GitHub", "Artificial Intelligence (AI)"]
+    },
+    {
+        role: "Founding Lead",
+        company: "GeeksforGeeks Campus Body - KNU",
+        duration: "Jul 2025 - Present",
+        location: "Asansol, West Bengal, India",
+        description: "Established and led the GFG Campus Body at Kazi Nazrul University, fostering a community of student developers.",
+        skills: ["Organizational Leadership", "Team Building"]
+    },
+    {
+        role: "Founder and Vice President",
+        company: "TERMINAL TROOPS",
+        duration: "May 2025 - Present",
+        location: "Asansol, West Bengal, India",
+        description: "Co-founded a tech group focused on competitive programming and technical skill development.",
+        skills: ["Administration", "Coding", "Competitive Programming", "Technical Leadership"]
+    },
+    {
+        role: "Campus Ambassador",
+        company: "GeeksforGeeks",
+        duration: "Dec 2024 - Present",
+        location: "Remote",
+        description: "Represented GeeksforGeeks, managing programs and fostering university relations.",
+        skills: ["Brand Ambassadorship", "Leadership", "Program Management", "University Relations"]
+    },
+    {
+        role: "Co-Founder (Exited)",
+        company: "Judgement Studios",
+        duration: "Feb 2025 - Jul 2025",
+        location: "Asansol, West Bengal, India",
+        description: "Built and scaled an e-commerce platform from the ground up, managing everything from web development to logistics and sales.",
+        skills: ["Shopify", "Technical Leadership", "Web Development", "SEO", "CRM"]
+    },
+    {
+        role: "Contributor",
+        company: "Social Winter of Code (SWOC)",
+        duration: "Jan 2025 - Mar 2025",
+        location: "Remote",
+        description: "Contributed to various open-source software projects on different platforms.",
+        skills: ["Open-Source Software", "Open-Source Development", "Open Source Platforms"]
+    }
+];
+
 export const contributions = [
   {
     title: 'Hacktoberfest Validator',
