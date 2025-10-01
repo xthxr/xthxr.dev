@@ -22,7 +22,7 @@ export function AboutSection() {
              <div>
                 <p className="text-lg text-muted-foreground mb-4">A Little Bit About Me</p>
                 <h2 className="text-5xl md:text-6xl font-bold font-headline tracking-tighter">
-                    I am a self-taught developer with a passion for creating beautiful and functional web experiences.
+                    I have a passion for creating amazing software experiences and explore the backend.
                 </h2>
             </div>
 
