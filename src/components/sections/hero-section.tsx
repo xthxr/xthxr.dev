@@ -51,7 +51,7 @@ export function HeroSection() {
             </div>
 
             <p className="text-lg max-w-md text-muted-foreground">
-              A CSE sophomore, building projects that can scale globally who ready to collaborate with peers with same mindset.
+              A CSE sophomore, building projects that can scale globally and I'm always ready to collaborate with peers with same mindset.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
@@ -62,7 +62,7 @@ export function HeroSection() {
               </Link>
               <Link href="#projects">
                 <Button size="lg" variant="outline" className="w-full sm:w-auto rounded-sm text-base font-bold py-6 px-8 border-2 hover:bg-foreground hover:text-background">
-                  See work
+                  Know more
                 </Button>
               </Link>
             </div>
