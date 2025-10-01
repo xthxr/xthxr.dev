@@ -22,7 +22,7 @@ export function Header() {
 
   const desktopNavLinks = [
     { name: "About", href: "#about" },
-    { name: "Work", href: "#projects" },
+    { name: "Projects", href: "#projects" },
     { name: "Experiments", href: "#opensource" },
     { name: "Contact", href: "#contact" },
   ];
