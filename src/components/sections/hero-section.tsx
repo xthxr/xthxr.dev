@@ -25,7 +25,7 @@ export function HeroSection() {
               alt="A portrait of Athar Akram"
               width={500}
               height={500}
-              className="object-cover aspect-square max-w-md w-full z-10"
+              className="object-contain aspect-square max-w-md w-full z-10"
               priority
             />
             <span className="absolute bottom-4 -left-12 transform -rotate-90 text-xs text-muted-foreground tracking-widest">
