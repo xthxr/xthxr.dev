@@ -18,14 +18,13 @@ export function HeroSection() {
       <div className="container mx-auto px-4 md:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           
-          <MotionWrapper className="flex justify-center lg:justify-start relative group">
+          <MotionWrapper className="flex justify-center lg:justify-start relative group h-[500px] max-w-md mx-auto w-full">
             <div className="absolute -bottom-2 -left-2 w-full h-full border-2 border-muted-foreground group-hover:border-primary transition-all duration-300" style={{clipPath: 'polygon(0 100%, 0 15%, 15% 0, 100% 0, 100% 85%, 85% 100%)'}}></div>
             <Image
               src="/hero-img.jpeg"
               alt="A portrait of Athar Akram"
-              width={500}
-              height={500}
-              className="object-contain aspect-square max-w-md w-full z-10"
+              fill
+              className="object-cover z-10 p-4"
               priority
             />
             <span className="absolute bottom-4 -left-12 transform -rotate-90 text-xs text-muted-foreground tracking-widest">
