@@ -88,10 +88,16 @@ export const projects = [
 
 export const education = [
     {
-        institution: 'University of Technology',
-        degree: 'Bachelor of Science in Computer Engineering',
-        duration: '2021 - 2025',
-        description: 'Focusing on software development, data structures, and algorithms. Actively involved in the university coding club and hackathon team.'
+        institution: 'Kazi Nazrul University, Asansol',
+        degree: 'Bachelor of Technology - BTech, Computer Science',
+        duration: '2024 - 2028',
+        description: 'Keen to learn more about Computer Science and excited to build a career around it!'
+    },
+    {
+        institution: 'Dreamland School, Makhla',
+        degree: 'ISC (Class 12), Science',
+        duration: '2015 - 2023',
+        description: 'Grade: 87.75% in ISC 12th grade | 93.4% in ICSE 10th grade. Scored 99 out of 100 in Computer Science.'
     }
 ];
 

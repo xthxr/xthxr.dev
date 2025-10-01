@@ -23,7 +23,7 @@ export function EducationSection() {
           </div>
           <div className="space-y-8">
             {education.map((edu, index) => (
-              <div key={index} className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
+              <div key={index} className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 border-b border-border pb-8 last:border-b-0 last:pb-0">
                 <div className="md:col-span-1">
                   <h3 className="text-xl font-bold font-headline">{edu.institution}</h3>
                   <p className="text-muted-foreground">{edu.duration}</p>
