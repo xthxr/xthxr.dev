@@ -3,7 +3,7 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { socialLinks } from '@/lib/data';
 import Link from 'next/link';
 import { Button } from '../ui/button';
-import { Github, Linkedin, Youtube } from 'lucide-react';
+import { Github, Linkedin, Youtube, Twitter, Instagram } from 'lucide-react';
 
 const Asterisk = (props: React.SVGProps<SVGSVGElement>) => (
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
@@ -37,18 +37,28 @@ export function AboutSection() {
             
             <div className="flex flex-row gap-4">
               <Link href={socialLinks.github} target="_blank" rel="noopener noreferrer">
-                <Button size="icon" variant="outline" className="rounded-full border-2">
+                <Button size="icon" variant="outline" className="rounded-full border-2 hover:border-primary hover:text-primary transition-colors">
                   <Github />
                 </Button>
               </Link>
               <Link href={socialLinks.linkedin} target="_blank" rel="noopener noreferrer">
-                <Button size="icon" variant="outline" className="rounded-full border-2">
+                <Button size="icon" variant="outline" className="rounded-full border-2 hover:border-primary hover:text-primary transition-colors">
                   <Linkedin />
                 </Button>
               </Link>
                <Link href={socialLinks.youtube} target="_blank" rel="noopener noreferrer">
-                <Button size="icon" variant="outline" className="rounded-full border-2">
+                <Button size="icon" variant="outline" className="rounded-full border-2 hover:border-primary hover:text-primary transition-colors">
                   <Youtube />
+                </Button>
+              </Link>
+              <Link href={socialLinks.twitter} target="_blank" rel="noopener noreferrer">
+                <Button size="icon" variant="outline" className="rounded-full border-2 hover:border-primary hover:text-primary transition-colors">
+                  <Twitter />
+                </Button>
+              </Link>
+              <Link href={socialLinks.instagram} target="_blank" rel="noopener noreferrer">
+                <Button size="icon" variant="outline" className="rounded-full border-2 hover:border-primary hover:text-primary transition-colors">
+                  <Instagram />
                 </Button>
               </Link>
             </div>

@@ -1,5 +1,5 @@
 import { socialLinks } from "@/lib/data";
-import { Github, Linkedin, Youtube } from "lucide-react";
+import { Github, Linkedin, Youtube, Twitter, Instagram } from "lucide-react";
 import Link from "next/link";
 
 export function Footer() {
@@ -18,6 +18,12 @@ export function Footer() {
             </Link>
              <Link href={socialLinks.youtube} target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">
                 <Youtube className="w-5 h-5"/>
+            </Link>
+            <Link href={socialLinks.twitter} target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">
+                <Twitter className="w-5 h-5"/>
+            </Link>
+            <Link href={socialLinks.instagram} target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">
+                <Instagram className="w-5 h-5"/>
             </Link>
         </div>
       </div>

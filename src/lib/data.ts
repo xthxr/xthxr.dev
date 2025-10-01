@@ -201,7 +201,9 @@ export const contributions = [
 ];
 
 export const socialLinks = {
-    github: "https://github.com/atharakram",
-    linkedin: "https://www.linkedin.com/in/atharakram",
-    youtube: "https://youtube.com/@atharakram"
+    github: "https://github.com/xthxr",
+    linkedin: "https://www.linkedin.com/in/xthxr",
+    youtube: "https://youtube.com/@atharakram",
+    twitter: "https://x.com/xthxr__/",
+    instagram: "https://www.instagram.com/athar.codes"
 }
