@@ -15,8 +15,11 @@ export function AboutSection() {
   const aboutImage = PlaceHolderImages.find(img => img.id === 'about-section');
 
   return (
-    <section id="about" className="w-full py-12 lg:py-20 bg-background text-foreground">
-      <div className="container mx-auto px-4 md:px-8">
+    <section id="about" className="w-full py-12 lg:py-20 bg-background text-foreground relative overflow-hidden">
+        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+          <div className="w-96 h-96 rounded-full bg-primary/10 blur-3xl animate-pulse-slow"></div>
+        </div>
+      <div className="container mx-auto px-4 md:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="flex flex-col space-y-8">
              <div>
