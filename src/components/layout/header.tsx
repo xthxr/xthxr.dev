@@ -30,7 +30,7 @@ export function Header() {
   ];
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/40 backdrop-blur-sm">
+    <header className="sticky top-0 z-50 w-full border-b border-border/20 bg-background/10 backdrop-blur-md">
       <div className="container mx-auto flex h-20 max-w-screen-2xl items-center justify-between px-4 md:px-8">
         <Link href="/" className="flex items-center">
           <span className="font-bold text-lg font-headline">
