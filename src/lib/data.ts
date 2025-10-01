@@ -18,9 +18,9 @@ function getImage(id: string): ImagePlaceholder {
 export const navLinks = [
     { name: "About", href: "#about" },
     { name: "Projects", href: "#projects" },
+    { name: "Achievements", href: "#achievements" },
     { name: "Skills", href: "#skills" },
     { name: "Education", href: "#education" },
-    { name: "Achievements", href: "#opensource" },
     { name: "Contact", href: "#contact" },
 ];
 
@@ -92,6 +92,33 @@ export const education = [
         duration: '2021 - 2025',
         description: 'Focusing on software development, data structures, and algorithms. Actively involved in the university coding club and hackathon team.'
     }
+];
+
+export const achievements = [
+    {
+        title: "SIH 2025 Team Lead",
+        description: "Led team to rank #2 in our university's internal hackathon.",
+    },
+    {
+        title: "Naukri Campus Young Turks 2025",
+        description: "Achieved a 97.39 percentile score in the national exam.",
+    },
+    {
+        title: "Apple Developer Academy",
+        description: "Qualified for the 2026 cohort in Indonesia.",
+    },
+    {
+        title: "GFG Linux Contest",
+        description: "Achieved Rank #1 multiple times in GeeksforGeeks contests.",
+    },
+    {
+        title: "ICDMAI Hackathon",
+        description: "Advanced to the semi-finalist stage.",
+    },
+    {
+        title: "National Coding League 2.0",
+        description: "Competed and reached the semi-finalist round.",
+    },
 ];
 
 export const contributions = [
