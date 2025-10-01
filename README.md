@@ -24,7 +24,6 @@ I'm Athar Akram, a passionate developer with a love for building modern web expe
 ## ✨ Features
 
 - **Project Gallery:** Explore my best work with live demos and source code.
-- **Blog:** Occasional articles on development, design, and tech insights.
 - **Contact:** Find ways to get in touch or connect for collaboration.
 
 ---
@@ -34,13 +33,3 @@ I'm Athar Akram, a passionate developer with a love for building modern web expe
 ![Portfolio Screenshot](./screenshot.png)
 
 ---
-
-## ⚡ Getting Started
-
-Want to run the site locally? Clone and launch with:
-
-```bash
-git clone https://github.com/xthxr/xthxr.dev.git
-cd xthxr.dev
-npm install
-npm run dev
