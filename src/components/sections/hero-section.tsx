@@ -40,7 +40,7 @@ export function HeroSection() {
                 <p className="text-lg text-muted-foreground mb-4">Hi, I'm Athar Akram</p>
                 <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold font-headline tracking-tighter font-stretch-condensed -ml-1">
                     <span className="block">ASPIRING</span>
-                    <span className="block italic">DevOps & Cloud</span>
+                    <span className="block italic text-primary">DevOps & Cloud</span>
                     <span className="block">ENGINEER</span>
                 </h1>
             </div>
