@@ -1,5 +1,6 @@
 import { experiences } from '@/lib/data';
 import { Briefcase } from 'lucide-react';
+import { MotionWrapper } from '../motion-wrapper';
 
 const Asterisk = (props: React.SVGProps<SVGSVGElement>) => (
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
@@ -15,20 +16,20 @@ export function ExperienceSection() {
         </div>
       <div className="container mx-auto px-4 md:px-8 relative z-10">
         <div className="flex flex-col space-y-8">
-          <div>
+          <MotionWrapper>
             <p className="text-lg text-muted-foreground mb-4">My Professional Journey</p>
             <h2 className="text-5xl md:text-6xl font-bold font-headline tracking-tighter">
               Experience
             </h2>
-          </div>
-          <div className="flex items-center gap-4">
+          </MotionWrapper>
+          <MotionWrapper className="flex items-center gap-4">
               <Asterisk className="text-primary w-6 h-6" />
               <div className="w-full h-px bg-border"></div>
-          </div>
+          </MotionWrapper>
           <div className="relative">
              <div className="absolute left-4 md:left-1/2 -translate-x-1/2 h-full w-0.5 bg-border"></div>
              {experiences.map((exp, index) => (
-                 <div key={index} className="relative flex items-start gap-8 mb-12 last:mb-0">
+                 <MotionWrapper key={index} className="relative flex items-start gap-8 mb-12 last:mb-0">
                      <div className="hidden md:flex flex-col items-center w-1/2 pr-8 text-right">
                          <h3 className="text-xl font-bold font-headline text-primary">{exp.role}</h3>
                          <p className="text-muted-foreground">{exp.company}</p>
@@ -54,7 +55,7 @@ export function ExperienceSection() {
                              ))}
                          </div>
                      </div>
-                 </div>
+                 </MotionWrapper>
              ))}
           </div>
         </div>

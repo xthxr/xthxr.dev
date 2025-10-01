@@ -4,6 +4,7 @@ import { socialLinks } from '@/lib/data';
 import Link from 'next/link';
 import { Button } from '../ui/button';
 import { Github, Linkedin, Youtube, Twitter, Instagram } from 'lucide-react';
+import { MotionWrapper } from '../motion-wrapper';
 
 const Asterisk = (props: React.SVGProps<SVGSVGElement>) => (
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
@@ -22,23 +23,25 @@ export function AboutSection() {
       <div className="container mx-auto px-4 md:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="flex flex-col space-y-8">
-             <div>
+             <MotionWrapper>
                 <p className="text-lg text-muted-foreground mb-4">A Little Bit About Me</p>
                 <h2 className="text-5xl md:text-6xl font-bold font-headline tracking-tighter">
                     I have a passion for creating amazing software experiences and explore the backend.
                 </h2>
-            </div>
+            </MotionWrapper>
 
-            <div className="flex items-center gap-4">
+            <MotionWrapper className="flex items-center gap-4">
                 <Asterisk className="text-primary w-6 h-6" />
                 <div className="w-full h-px bg-border"></div>
-            </div>
+            </MotionWrapper>
 
-            <p className="text-lg max-w-2xl text-muted-foreground">
-              As an aspiring DevOps & Cloud Engineer, I am deeply passionate about building scalable, high-performance infrastructure and automating development pipelines. My journey into technology was driven by a curiosity for how complex systems work together to deliver seamless user experiences. I thrive on solving challenging problems and continuously learning new skills in the ever-evolving world of cloud computing and automation.
-            </p>
+            <MotionWrapper>
+                <p className="text-lg max-w-2xl text-muted-foreground">
+                As an aspiring DevOps & Cloud Engineer, I am deeply passionate about building scalable, high-performance infrastructure and automating development pipelines. My journey into technology was driven by a curiosity for how complex systems work together to deliver seamless user experiences. I thrive on solving challenging problems and continuously learning new skills in the ever-evolving world of cloud computing and automation.
+                </p>
+            </MotionWrapper>
             
-            <div className="flex flex-row gap-4">
+            <MotionWrapper className="flex flex-row gap-4">
               <Link href={socialLinks.github} target="_blank" rel="noopener noreferrer">
                 <Button size="icon" variant="outline" className="rounded-full border-2 hover:border-primary hover:text-primary transition-colors">
                   <Github />
@@ -64,10 +67,10 @@ export function AboutSection() {
                   <Instagram />
                 </Button>
               </Link>
-            </div>
+            </MotionWrapper>
           </div>
 
-          <div className="flex justify-center lg:justify-end relative group">
+          <MotionWrapper className="flex justify-center lg:justify-end relative group">
             <div className="absolute -bottom-2 -right-2 w-full h-full border-2 border-muted-foreground group-hover:border-primary transition-all duration-300" style={{clipPath: 'polygon(15% 0, 100% 0, 100% 85%, 85% 100%, 0 100%, 0 15%)'}}></div>
             {aboutImage && (
               <Image
@@ -82,7 +85,7 @@ export function AboutSection() {
              <span className="absolute top-4 -right-12 transform rotate-90 text-xs text-muted-foreground tracking-widest">
               PHOTO_782
             </span>
-          </div>
+          </MotionWrapper>
         </div>
       </div>
     </section>

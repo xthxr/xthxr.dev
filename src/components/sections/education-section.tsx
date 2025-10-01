@@ -1,4 +1,5 @@
 import { education } from '@/lib/data';
+import { MotionWrapper } from '../motion-wrapper';
 
 const Asterisk = (props: React.SVGProps<SVGSVGElement>) => (
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
@@ -14,19 +15,19 @@ export function EducationSection() {
         </div>
       <div className="container mx-auto px-4 md:px-8 relative z-10">
         <div className="flex flex-col space-y-8">
-          <div>
+          <MotionWrapper>
             <p className="text-lg text-muted-foreground mb-4">My Background</p>
             <h2 className="text-5xl md:text-6xl font-bold font-headline tracking-tighter">
               Education
             </h2>
-          </div>
-          <div className="flex items-center gap-4">
+          </MotionWrapper>
+          <MotionWrapper className="flex items-center gap-4">
               <Asterisk className="text-primary w-6 h-6" />
               <div className="w-full h-px bg-border"></div>
-          </div>
+          </MotionWrapper>
           <div className="space-y-8">
             {education.map((edu, index) => (
-              <div key={index} className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 border-b border-border pb-8 last:border-b-0 last:pb-0">
+              <MotionWrapper key={index} className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 border-b border-border pb-8 last:border-b-0 last:pb-0">
                 <div className="md:col-span-1">
                   <h3 className="text-xl font-bold font-headline">{edu.institution}</h3>
                   <p className="text-muted-foreground">{edu.duration}</p>
@@ -35,7 +36,7 @@ export function EducationSection() {
                   <h4 className="text-lg font-semibold">{edu.degree}</h4>
                   <p className="text-muted-foreground mt-2">{edu.description}</p>
                 </div>
-              </div>
+              </MotionWrapper>
             ))}
           </div>
         </div>

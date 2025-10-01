@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { Button } from '../ui/button';
 import { ArrowUpRight, GitFork, Star } from 'lucide-react';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
+import { MotionWrapper } from '../motion-wrapper';
 
 const Asterisk = (props: React.SVGProps<SVGSVGElement>) => (
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
@@ -21,19 +22,19 @@ export async function ProjectsSection() {
       </div>
       <div className="container mx-auto px-4 md:px-8 relative z-10">
         <div className="flex flex-col space-y-8">
-          <div>
+          <MotionWrapper>
             <p className="text-lg text-muted-foreground mb-4">My Work</p>
             <h2 className="text-5xl md:text-6xl font-bold font-headline tracking-tighter">
               Featured Projects
             </h2>
-          </div>
-          <div className="flex items-center gap-4">
+          </MotionWrapper>
+          <MotionWrapper className="flex items-center gap-4">
               <Asterisk className="text-primary w-6 h-6" />
               <div className="w-full h-px bg-border"></div>
-          </div>
+          </MotionWrapper>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {projects.map((project) => (
-              <div key={project.id} className="flex flex-col group">
+            {projects.map((project, index) => (
+              <MotionWrapper key={project.id} className="flex flex-col group">
                 <div className="relative overflow-hidden aspect-[5/3] w-full bg-muted/20 border-2 border-border group-hover:border-primary transition-all duration-300 p-6 flex flex-col justify-center text-center" style={{clipPath: 'polygon(0 100%, 0 15%, 15% 0, 100% 0, 100% 85%, 85% 100%)'}}>
                   <div className="absolute inset-0 bg-gradient-to-br from-background via-transparent to-background opacity-50 group-hover:opacity-20 transition-opacity duration-300"></div>
                    <div className="absolute inset-0 flex items-center justify-center">
@@ -63,7 +64,7 @@ export async function ProjectsSection() {
                         </Button>
                     </Link>
                 </div>
-              </div>
+              </MotionWrapper>
             ))}
           </div>
         </div>
