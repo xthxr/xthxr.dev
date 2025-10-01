@@ -32,21 +32,21 @@ export const skills = [
 
 export const projects = [
   {
-    title: 'QuantumLeap',
-    description: 'A conceptual platform for collaborative quantum computing experiments. Built with Next.js, TypeScript, and a custom simulation engine.',
-    link: '#',
+    title: 'maistro',
+    description: 'A platform for music producers to collaborate, share, and get feedback on their work. Built with Next.js, tRPC, and Prisma.',
+    link: 'https://github.com/xthxr/maistro',
     image: getImage('project-1'),
   },
   {
-    title: 'SynthWave API',
-    description: 'A RESTful API for generating procedural 80s-inspired music tracks. Powered by Node.js, Express, and Tone.js.',
-    link: '#',
+    title: 'portfolio',
+    description: 'My personal portfolio website built with Next.js and Tailwind CSS, showcasing my projects and skills.',
+    link: 'https://github.com/xthxr/portfolio',
     image: getImage('project-2'),
   },
   {
-    title: 'CodeSphere',
-    description: 'An interactive 3D visualization of GitHub repository structures using Three.js and React, offering a unique way to explore codebases.',
-    link: '#',
+    title: 'clerk-next-app-router-trpc',
+    description: 'A starter template for building a full-stack application with Next.js App Router, Clerk for authentication, and tRPC for type-safe APIs.',
+    link: 'https://github.com/xthxr/clerk-next-app-router-trpc',
     image: getImage('project-3'),
   },
 ];
