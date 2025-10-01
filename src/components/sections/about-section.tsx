@@ -21,7 +21,7 @@ export function AboutSection() {
           <div className="w-96 h-96 rounded-full bg-primary/10 blur-3xl animate-pulse-slow"></div>
         </div>
       <div className="container mx-auto px-4 md:px-8 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-1 gap-12 items-center">
           <div className="flex flex-col space-y-8">
              <MotionWrapper>
                 <p className="text-lg text-muted-foreground mb-4">A Little Bit About Me</p>
@@ -69,23 +69,6 @@ export function AboutSection() {
               </Link>
             </MotionWrapper>
           </div>
-
-          <MotionWrapper className="flex justify-center lg:justify-end relative group">
-            <div className="absolute -bottom-2 -right-2 w-full h-full border-2 border-muted-foreground group-hover:border-primary transition-all duration-300" style={{clipPath: 'polygon(15% 0, 100% 0, 100% 85%, 85% 100%, 0 100%, 0 15%)'}}></div>
-            {aboutImage && (
-              <Image
-                src={aboutImage.imageUrl}
-                alt={aboutImage.description}
-                data-ai-hint={aboutImage.imageHint}
-                width={500}
-                height={500}
-                className="object-cover aspect-square max-w-md w-full z-10"
-              />
-            )}
-             <span className="absolute top-4 -right-12 transform rotate-90 text-xs text-muted-foreground tracking-widest">
-              PHOTO_782
-            </span>
-          </MotionWrapper>
         </div>
       </div>
     </section>
