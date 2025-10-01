@@ -1,5 +1,8 @@
 'use server';
 
+// This file is no longer used by the contact form but is kept for potential future use.
+// The contact form now uses a 'mailto:' link to open the user's default email client.
+
 import * as z from 'zod';
 
 const formSchema = z.object({

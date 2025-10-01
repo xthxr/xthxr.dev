@@ -15,7 +15,6 @@ import {
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
-import { sendEmail } from '@/app/actions';
 import { useState } from 'react';
 
 const formSchema = z.object({
@@ -46,24 +45,29 @@ export function ContactForm() {
   async function onSubmit(values: z.infer<typeof formSchema>) {
     setIsSubmitting(true);
     try {
-      const result = await sendEmail(values);
-      if (result.success) {
-        toast({
-          title: 'Message Sent!',
-          description: "Thanks for reaching out. I'll get back to you soon.",
-        });
-        form.reset();
-      } else {
-        throw new Error(result.message || 'An unknown error occurred.');
-      }
+      const subject = encodeURIComponent(`Message from ${values.name} via Portfolio`);
+      const body = encodeURIComponent(`${values.message}\n\nFrom: ${values.name}\nEmail: ${values.email}`);
+      const mailtoLink = `mailto:atharakram@gmail.com?subject=${subject}&body=${body}`;
+      
+      // We can't detect if the email was sent, so we'll assume the user will handle it.
+      // We will open the mail client and show a confirmation toast.
+      window.location.href = mailtoLink;
+      
+      toast({
+        title: 'Ready to Send!',
+        description: "Your email client should be open. Just hit send!",
+      });
+      form.reset();
+
     } catch (error) {
        toast({
         variant: 'destructive',
         title: 'Uh oh! Something went wrong.',
-        description: (error as Error).message || 'There was a problem with your request.',
+        description: (error as Error).message || 'Could not prepare your email.',
       });
     } finally {
-      setIsSubmitting(false);
+      // Add a small delay to allow the mail client to open before re-enabling the button.
+      setTimeout(() => setIsSubmitting(false), 1000);
     }
   }
 
@@ -110,7 +114,7 @@ export function ContactForm() {
           )}
         />
         <Button type="submit" className="w-full transition-all hover:shadow-glow" disabled={isSubmitting}>
-          {isSubmitting ? 'Sending...' : 'Send Message'}
+          {isSubmitting ? 'Preparing...' : 'Send Message'}
         </Button>
       </form>
     </Form>
