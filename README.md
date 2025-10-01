@@ -1,5 +1,46 @@
-# Firebase Studio
+# xthxr.dev
 
-This is a NextJS starter in Firebase Studio.
+Welcome to **xthxr.dev** — the personal portfolio of [Athar Akram](https://github.com/xthxr)!
 
-To get started, take a look at src/app/page.tsx.
+This site serves as a digital showcase of my work, technical skills, and interests as a developer. Whether you’re a fellow coder, a prospective collaborator, or just browsing for inspiration, you’ll find a curated collection of my favorite projects and experiments here.
+
+---
+
+## 🧑‍💻 About Me
+
+I'm Athar Akram, a passionate developer with a love for building modern web experiences. My primary tools are TypeScript, React, and the latest in front-end technologies. I enjoy solving problems, learning new frameworks, and sharing what I discover with the community.
+
+---
+
+## 🚀 Tech Stack
+
+- **TypeScript** — The powerhouse language behind this site
+- **React / Next.js** — For dynamic, high-performance UI
+- **Tailwind CSS** — For rapid, utility-first styling
+- **Vercel** — For fast, reliable deployment
+
+---
+
+## ✨ Features
+
+- **Project Gallery:** Explore my best work with live demos and source code.
+- **Blog:** Occasional articles on development, design, and tech insights.
+- **Contact:** Find ways to get in touch or connect for collaboration.
+
+---
+
+## 🖼️ Preview
+
+![Portfolio Screenshot](./screenshot.png)
+
+---
+
+## ⚡ Getting Started
+
+Want to run the site locally? Clone and launch with:
+
+```bash
+git clone https://github.com/xthxr/xthxr.dev.git
+cd xthxr.dev
+npm install
+npm run dev
