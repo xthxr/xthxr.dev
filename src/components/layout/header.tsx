@@ -51,7 +51,7 @@ export function Header() {
         </nav>
 
         <div className="hidden md:flex items-center gap-4 text-sm font-medium">
-          <Link href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="text-muted-foreground transition-colors hover:text-foreground">
+          <Link href="https://drive.google.com/file/d/1I6U0c5EMmQDiZzc7ZUwEcScrdZfaJ1uS/preview" target="_blank" rel="noopener noreferrer" className="text-muted-foreground transition-colors hover:text-foreground">
             RESUME
           </Link>
           <div className="w-8 h-px bg-muted-foreground"></div>
