@@ -30,6 +30,36 @@ export const skills = [
   'PostgreSQL', 'MongoDB', 'Docker', 'Git & GitHub', 'Tailwind CSS'
 ];
 
+export type Project = {
+  id: number;
+  name: string;
+  description: string | null;
+  html_url: string;
+  topics: string[];
+};
+
+export async function getGithubProjects(username: string): Promise<Project[]> {
+  try {
+    const response = await fetch(`https://api.github.com/users/${username}/repos?sort=pushed&per_page=6`);
+    if (!response.ok) {
+      console.error('Failed to fetch projects from GitHub');
+      return [];
+    }
+    const data = await response.json();
+    return data.map((repo: any) => ({
+      id: repo.id,
+      name: repo.name,
+      description: repo.description,
+      html_url: repo.html_url,
+      topics: repo.topics || [],
+    }));
+  } catch (error) {
+    console.error('Error fetching projects:', error);
+    return [];
+  }
+}
+
+
 export const projects = [
   {
     title: 'maistro',
