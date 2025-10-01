@@ -51,7 +51,7 @@ export function HeroSection() {
             </div>
 
             <p className="text-lg max-w-md text-muted-foreground">
-              I create immersive, high-performing websites and applications tailored for startups, agencies, and in-house teams that need speed, scalability, and full control.
+              A CSE sophomore, building projects that can scale globally who ready to collaborate with peers with same mindset.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
