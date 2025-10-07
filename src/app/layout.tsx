@@ -11,6 +11,9 @@ const spaceGrotesk = Space_Grotesk({ subsets: ["latin"], variable: "--font-space
 export const metadata: Metadata = {
   title: "xthxr.dev | Athar Akram",
   description: "Engineering Student, Developer, and Creator.",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({
