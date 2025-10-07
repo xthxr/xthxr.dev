@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title: "xthxr.dev | Athar Akram",
   description: "Engineering Student, Developer, and Creator.",
   icons: {
-    icon: "/favicon.ico",
+    icon: "/favicon.ico?v=2",
   },
 };
 
