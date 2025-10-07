@@ -43,7 +43,9 @@ export type Project = {
 
 export async function getGithubProjects(username: string): Promise<Project[]> {
   try {
-    const response = await fetch(`https://api.github.com/users/${username}/repos?sort=pushed&per_page=6`);
+    const response = await fetch(`https://api.github.com/users/${username}/repos?sort=pushed&per_page=6`, {
+      next: { revalidate: 3600 } // Revalidate every hour
+    });
     if (!response.ok) {
       console.error('Failed to fetch projects from GitHub');
       return [];
