@@ -24,9 +24,9 @@ export function AboutSection() {
         <div className="grid grid-cols-1 lg:grid-cols-1 gap-12 items-center">
           <div className="flex flex-col space-y-8">
              <MotionWrapper>
-                <p className="text-lg text-muted-foreground mb-4">A Little Bit About Me</p>
+                <p className="text-lg text-muted-foreground mb-4">Who am I?</p>
                 <h2 className="text-5xl md:text-6xl font-bold font-headline tracking-tighter">
-                    I have a passion for creating amazing software experiences and explore the backend.
+                    I have a passion for creating amazing software experiences.
                 </h2>
             </MotionWrapper>
 
@@ -37,7 +37,7 @@ export function AboutSection() {
 
             <MotionWrapper>
                 <p className="text-lg max-w-2xl text-muted-foreground">
-                As an aspiring DevOps & Cloud Engineer, I am deeply passionate about building scalable, high-performance infrastructure and automating development pipelines. My journey into technology was driven by a curiosity for how complex systems work together to deliver seamless user experiences. I thrive on solving challenging problems and continuously learning new skills in the ever-evolving world of cloud computing and automation.
+                As an aspiring Software Engineer in the era of AI, I am deeply passionate about building scalable, high-performance infrastructure and automating development pipelines. My journey into technology was driven by a curiosity for how complex systems work together to deliver seamless user experiences. I thrive on solving challenging problems and continuously learning new skills in the ever-evolving world of cloud computing and automation.
                 </p>
             </MotionWrapper>
             
