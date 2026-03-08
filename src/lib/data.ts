@@ -110,19 +110,19 @@ export const achievements = [
     },
     {
         title: "Research Paper on AI Agents",
-        description: "My research paper on Enhancing AI Security was selected among 20 papers from accross 4 districts in the ICT discipline at the 8th Regional Science and Technology Congress (Region-02) held at KAZI NAZRUL UNIVERSITY, ASANSOL, jointly organized with the D.S.T.B.T., Govt. of W.B.",
+        description: "My research paper on Enhancing AI Security was selected among 20 papers from across 4 districts in the ICT discipline at the 8th Regional Science and Technology Congress (Region-02) held at KAZI NAZRUL UNIVERSITY, ASANSOL, jointly organized with the D.S.T.B.T., Govt. of W.B.",
     },
     {
         title: "SIH 2025 Team Lead",
-        description: "Led team to rank #2 in our university's internal hackathon.",
+        description: "Led team to rank #2 in our university's internal hackathon and built MineKavach: A rockfall prediction system for open-pit mines",
     },
     {
         title: "Naukri Campus Young Turks 2025",
-        description: "Achieved a 97.39 percentile score in the national exam.",
+        description: "Achieved a 97.39 percentile score in the national exam conducted by Naukri Campus including two set of exams",
     },
     {
         title: "Apple Developer Academy",
-        description: "Qualified for the 2026 cohort in Indonesia.",
+        description: "Among the very few Indians, I, qualified for the 2026 Apple's Developer Academy Cohort in Bali, Indonesia.",
     },
     {
         title: "GFG Linux Contest",
@@ -130,11 +130,11 @@ export const achievements = [
     },
     {
         title: "ICDMAI Hackathon",
-        description: "Advanced to the semi-finalist stage.",
+        description: "Advanced to the semi-finalist stage during my first semester",
     },
     {
         title: "National Coding League 2.0",
-        description: "Competed and reached the semi-finalist round.",
+        description: "Competed and reached the semi-finalist round just after 12th",
     },
 ];
 
