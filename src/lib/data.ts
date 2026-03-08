@@ -105,6 +105,14 @@ export const education = [
 
 export const achievements = [
     {
+        title: "Diversion 2K26, A MLH hackathon",
+        description: "Built a channelized system for stray animal's rescue in the 36 hours Major League Hacking partnered hackathon",
+    },
+    {
+        title: "Research Paper on AI Agents",
+        description: "My research paper on "Enhancing AI Security: Multi Agent Systems for Detecting and Mitigating Agentic Misalignment" was selected in the Information and Communication Science and Technology (including Computer Science) discipline at the 8th Regional Science and Technology Congress (Region-02) held at KAZI NAZRUL UNIVERSITY, ASANSOL, jointly organized with the Department of Science, Technology and Biotechnology, Govt. of W.B.",
+    },
+    {
         title: "SIH 2025 Team Lead",
         description: "Led team to rank #2 in our university's internal hackathon.",
     },
