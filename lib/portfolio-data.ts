@@ -14,15 +14,16 @@ export type ProjectRecord = {
 };
 
 export const portfolioConfig = {
+  siteName: "xthxr",
   person: "Athar Akram",
-  role: "full-stack / systems / applied AI",
+  role: "developer / systems / applied AI",
   location: "Kolkata, India",
   email: "myselfatharakram@gmail.com",
   github: "https://github.com/xthxr",
   linkedin: "https://www.linkedin.com/in/xthxr/",
   education: "B.Tech, Computer Science & Engineering (Data Science), Kazi Nazrul University · 2024–2028 · GPA 8.56",
   hiddenRepositories: [] as string[],
-  featuredRepositories: ["BizChat", "WatchTower", "PIIK.ME", "DS Visualizer"],
+  featuredRepositories: ["BizChat", "WatchTower", "PIIK.ME", "DS Visualizer", "leet-collab"],
 };
 
 // Resume-backed project snapshot. GitHub ingestion supplements these records
@@ -85,6 +86,37 @@ export const projects: ProjectRecord[] = [
     technologies: ["React", "Node.js", "DeepSeek API"],
     source: "https://github.com/xthxr/gistify",
   },
+  {
+    id: "leet-collab",
+    name: "LEET COLLAB",
+    kind: "COLLABORATIVE PRACTICE",
+    description: "A collaborative coding project from the xthxr GitHub profile.",
+    impact: "Open-source project maintained under the xthxr developer identity.",
+    status: "active", year: 2026, size: 0.66, energy: 0.74,
+    technologies: ["JavaScript", "GitHub"],
+    source: "https://github.com/xthxr/leet-collab",
+  },
+  {
+    id: "chrome-dino-java",
+    name: "DINO / JAVA",
+    kind: "GAME SYSTEM",
+    description: "A Java recreation of the familiar Chrome Dino game loop.",
+    impact: "A compact study in interaction, timing, and game-state architecture.",
+    status: "dormant", year: 2025, size: 0.52, energy: 0.5,
+    technologies: ["Java", "Game Development"],
+    source: "https://github.com/xthxr/chrome-dino-game-java",
+  },
+  {
+    id: "xthxr-dev",
+    name: "XTHXR.DEV",
+    kind: "DEVELOPER IDENTITY",
+    description: "The original personal portfolio and public developer presence for xthxr.",
+    impact: "A continually evolving surface for work, writing, and engineering identity.",
+    status: "active", year: 2026, size: 0.6, energy: 0.76,
+    technologies: ["React", "TypeScript", "Portfolio"],
+    source: "https://github.com/xthxr/xthxr.dev",
+    live: "https://xthxr-dev.vercel.app/",
+  },
 ];
 
 export const signals = [
@@ -92,12 +124,14 @@ export const signals = [
   { name: "SYNTHICA", label: "software engineering intern · research workflows", strength: 0.78 },
   { name: "GSSOC'26", label: "open-source mentor and project admin", strength: 0.72 },
   { name: "TERMINAL TROOPS", label: "coding club vice president · 50+ developers", strength: 0.68 },
+  { name: "GEEKSFORGEEKS", label: "founding lead · campus body, KNU", strength: 0.65 },
 ];
 
 export const experience = [
   { role: "Software Engineer Intern", organization: "Synthica", detail: "Research workflow platform; journal dashboards, submission tracking, analytics, and publication management." },
   { role: "Website Manager Intern", organization: "Project Q2", detail: "Maintaining and improving a live WordPress presence for performance and accessibility." },
   { role: "Research Assistant", organization: "Kazi Nazrul University", detail: "ML work on ribosomal disease detection, data augmentation, and model efficiency." },
+  { role: "Founding Lead", organization: "GeeksforGeeks Campus Body — KNU", detail: "Established a student-developer community around programs, events, and technical growth." },
 ];
 
 export const hackathons = [
@@ -105,4 +139,16 @@ export const hackathons = [
   { name: "Hack with Gujarat", outcome: "Team lead", project: "Gistify — AI webpage summarizer" },
   { name: "ICDMAI", outcome: "Semi-finalist", project: "Team project" },
   { name: "National Coding League 2.0", outcome: "Regional qualifier", project: "Team lead" },
+  { name: "Diversion 2K26 — MLH", outcome: "36-hour build", project: "Channelized stray-animal rescue system" },
 ];
+
+export const achievements = [
+  { code: "01", title: "Diversion 2K26 / MLH", detail: "Built a channelized stray-animal rescue system during the 36-hour Major League Hacking event." },
+  { code: "02", title: "AI Agent Security Research", detail: "Research paper on enhancing AI security selected among the top 20 ICT papers at the 8th Regional Science and Technology Congress." },
+  { code: "03", title: "Smart India Hackathon 2025", detail: "Led MineKavach, a rockfall prediction system for open-pit mines, to internal rank #2." },
+  { code: "04", title: "Apple Developer Academy 2026", detail: "Qualified for the Apple Developer Academy cohort in Bali, Indonesia." },
+  { code: "05", title: "Naukri Campus Young Turks", detail: "Scored 97.39 percentile in the national assessment; AIR 416 is listed in the current CV." },
+  { code: "06", title: "Open Source", detail: "Hacktoberfest 2025 Super Contributor and GSSOC’26 open-source mentor / project admin." },
+];
+
+export const technologyAtlas = ["TypeScript", "React", "Next.js", "Node.js", "Python", "PostgreSQL", "Redis", "Firebase", "AI Safety", "VS Code API", "Git", "Linux"];

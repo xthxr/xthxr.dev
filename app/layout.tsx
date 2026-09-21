@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "CODEFIELD — Athar Akram",
-  description: "Software, systems and experiments by Athar Akram, rendered as a computational field.",
+  title: "xthxr — Developer Portfolio",
+  description: "xthxr: developer systems, applied AI, and projects by Athar Akram.",
   metadataBase: new URL("https://athar-codefield.vivid-coot-5404.chatgpt.site"),
   icons: { icon: "/favicon.svg", shortcut: "/favicon.svg" },
 };
