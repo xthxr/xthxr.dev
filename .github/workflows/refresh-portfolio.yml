@@ -1,0 +1,24 @@
+name: Refresh portfolio data
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 */12 * * *"
+permissions:
+  contents: write
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run data:refresh
+        env:
+          PORTFOLIO_GITHUB_USER: ${{ vars.PORTFOLIO_GITHUB_USER }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - uses: stefanzweifel/git-auto-commit-action@v6
+        with:
+          commit_message: "chore(data): refresh portfolio snapshot"
