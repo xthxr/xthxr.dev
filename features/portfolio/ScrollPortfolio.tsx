@@ -96,15 +96,15 @@ export function ScrollPortfolio() {
         <div className="xp-hero-bottom"><span>01 / THE STORY</span><a href="#achievements">SCROLL TO EXPLORE <span className="xp-down-arrow">↓</span></a><span>OPEN TO INTERESTING PROBLEMS <i /></span></div>
       </section>
 
-      <div className="xp-ticker" aria-hidden="true"><div className="xp-ticker-track">{Array.from({ length: 4 }, (_, i) => <span key={i}>ENGINEER <b>✳</b> RESEARCHER <b>✳</b> COMMUNITY BUILDER <b>✳</b> </span>)}</div></div>
+      <div className="xp-ticker" aria-hidden="true"><div className="xp-ticker-track">{Array.from({ length: 4 }, (_, i) => <span key={i}>ENGINEER <b>✳</b> RESEARCHER <b>✳</b> CREATOR <b>✳</b> COMMUNITY BUILDER <b>✳</b> </span>)}</div></div>
 
       <section className="xp-section xp-achievements" id="achievements" aria-labelledby="achievement-heading">
         <div className="xp-section-meta xp-reveal"><span>01 / ACHIEVEMENTS</span><span>THE SIGNAL, NOT THE NOISE</span></div>
         <div className="xp-achievement-heading xp-reveal"><h2 id="achievement-heading">Proof<br /><em>of work.</em></h2><p>Competitions, research, and moments where the work stood out. A few markers from a much bigger journey.</p></div>
         <div className="xp-achievement-list">
-          {achievements.map((achievement, index) => <article className="xp-achievement xp-reveal" key={achievement.code}>
+          {achievements.map((achievement) => <article className="xp-achievement xp-reveal" key={achievement.code}>
             <span className="xp-achievement-number">/{achievement.code}</span>
-            <div className="xp-achievement-copy"><span className="xp-achievement-category">{index === 1 ? "RESEARCH" : index === 3 ? "SELECTION" : index === 4 ? "ASSESSMENT" : index === 5 ? "OPEN SOURCE" : "COMPETITION"}</span><h3>{achievement.title}</h3><p>{achievement.detail}</p></div>
+            <div className="xp-achievement-copy"><span className="xp-achievement-category">{achievement.category}</span><h3>{achievement.title}</h3><p>{achievement.detail}</p></div>
             <span className="xp-achievement-mark" aria-hidden="true">↗</span>
           </article>)}
         </div>
@@ -121,7 +121,7 @@ export function ScrollPortfolio() {
             <span className="xp-exp-index">0{index + 1}</span><div><h3>{item.organization}</h3><p>{item.role}</p></div><p className="xp-exp-detail">{item.detail}</p><span className="xp-exp-arrow" aria-hidden="true">↗</span>
           </article>)}
         </div>
-        <div className="xp-community xp-reveal"><span>ALSO IN THE MIX</span><p>Founder / VP at <strong>Terminal Troops</strong>, an on-campus coding community of 50+ developers. Contributor and mentor across open-source programs.</p></div>
+        <div className="xp-community xp-reveal"><span>ALSO IN THE MIX</span><p>Founder / VP at <strong>Terminal Troops</strong>, an on-campus coding community of 50+ developers. A <strong>Code Cubicle 6.0 mentor</strong>, open-source contributor, and tech creator for a 25K+ Instagram community.</p></div>
       </section>
 
       <section className="xp-section xp-work" id="work" aria-labelledby="work-heading">

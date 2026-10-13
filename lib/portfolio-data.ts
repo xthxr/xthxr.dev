@@ -143,12 +143,16 @@ export const hackathons = [
 ];
 
 export const achievements = [
-  { code: "01", title: "Diversion 2K26 / MLH", detail: "Built a channelized stray-animal rescue system during the 36-hour MLH-partnered hackathon." },
-  { code: "02", title: "AI Agent Security Research", detail: "Research paper on enhancing AI security selected as one of 20 ICT papers at the 8th Regional Science and Technology Congress." },
-  { code: "03", title: "Smart India Hackathon 2025", detail: "Led MineKavach, a rockfall prediction system for open-pit mines, to internal rank #2." },
-  { code: "04", title: "Apple Developer Academy 2026", detail: "Qualified for the Apple Developer Academy cohort in Bali, Indonesia." },
-  { code: "05", title: "Naukri Campus Young Turks", detail: "Scored 97.39 percentile and All India Rank 416 in the national assessment." },
-  { code: "06", title: "Open Source", detail: "Hacktoberfest 2025 Super Contributor and GSSOC’26 open-source mentor / project admin." },
+  { code: "01", category: "HACKATHON", title: "Smart India Hackathon 2026", detail: "Won the university internal round, held on 14 September 2026." },
+  { code: "02", category: "COMPETITION", title: "Amazon ML Challenge 2026", detail: "Ranked among the top 500 teams with my team in Amazon’s machine-learning challenge." },
+  { code: "03", category: "MENTORSHIP", title: "Code Cubicle 6.0", detail: "Mentored participants at Code Cubicle 6.0, helping builders move from ideas to working solutions." },
+  { code: "04", category: "CREATOR", title: "Tech Content Creator", detail: "Built a 25K+ follower community on Instagram around technology, learning, and building in public." },
+  { code: "05", category: "HACKATHON", title: "Diversion 2K26 / MLH", detail: "Built a channelized stray-animal rescue system during the 36-hour MLH-partnered hackathon." },
+  { code: "06", category: "RESEARCH", title: "AI Agent Security Research", detail: "Research paper on enhancing AI security selected as one of 20 ICT papers at the 8th Regional Science and Technology Congress." },
+  { code: "07", category: "HACKATHON", title: "Smart India Hackathon 2025", detail: "Led MineKavach, a rockfall prediction system for open-pit mines, to internal rank #2." },
+  { code: "08", category: "SELECTION", title: "Apple Developer Academy 2026", detail: "Qualified for the Apple Developer Academy cohort in Bali, Indonesia." },
+  { code: "09", category: "ASSESSMENT", title: "Naukri Campus Young Turks", detail: "Scored 97.39 percentile and All India Rank 416 in the national assessment." },
+  { code: "10", category: "OPEN SOURCE", title: "Open Source", detail: "Hacktoberfest 2025 Super Contributor and GSSOC’26 open-source mentor / project admin." },
 ];
 
 export const technologyAtlas = ["TypeScript", "React", "Next.js", "Node.js", "Python", "PostgreSQL", "Redis", "Firebase", "AI Safety", "VS Code API", "Git", "Linux"];
