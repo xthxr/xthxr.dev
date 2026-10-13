@@ -143,11 +143,11 @@ export const hackathons = [
 ];
 
 export const achievements = [
-  { code: "01", title: "Diversion 2K26 / MLH", detail: "Built a channelized stray-animal rescue system during the 36-hour Major League Hacking event." },
-  { code: "02", title: "AI Agent Security Research", detail: "Research paper on enhancing AI security selected among the top 20 ICT papers at the 8th Regional Science and Technology Congress." },
+  { code: "01", title: "Diversion 2K26 / MLH", detail: "Built a channelized stray-animal rescue system during the 36-hour MLH-partnered hackathon." },
+  { code: "02", title: "AI Agent Security Research", detail: "Research paper on enhancing AI security selected as one of 20 ICT papers at the 8th Regional Science and Technology Congress." },
   { code: "03", title: "Smart India Hackathon 2025", detail: "Led MineKavach, a rockfall prediction system for open-pit mines, to internal rank #2." },
   { code: "04", title: "Apple Developer Academy 2026", detail: "Qualified for the Apple Developer Academy cohort in Bali, Indonesia." },
-  { code: "05", title: "Naukri Campus Young Turks", detail: "Scored 97.39 percentile in the national assessment; AIR 416 is listed in the current CV." },
+  { code: "05", title: "Naukri Campus Young Turks", detail: "Scored 97.39 percentile and All India Rank 416 in the national assessment." },
   { code: "06", title: "Open Source", detail: "Hacktoberfest 2025 Super Contributor and GSSOC’26 open-source mentor / project admin." },
 ];
 

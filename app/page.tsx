@@ -1,5 +1,5 @@
-import { CodefieldExperience } from "@/features/codefield/CodefieldExperience";
+import { ScrollPortfolio } from "@/features/portfolio/ScrollPortfolio";
 
 export default function Home() {
-  return <CodefieldExperience />;
+  return <ScrollPortfolio />;
 }
